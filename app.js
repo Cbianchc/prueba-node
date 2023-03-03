@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 //constante app usa express
 
-const port = 3000;
+const port = process.env.port || 3000;
 //esto va a ser dinamico, el puerto lo da el hosting
 
 app.set('view engine', 'ejs');
